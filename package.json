@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/cotes2020/jekyll-theme-chirpy/issues"
   },
-  "homepage": "https://taegyuni.github.io",
+  "homepage": "https://github.com/cotes2020/jekyll-theme-chirpy/",
   "scripts": {
     "prebuild": "npx rimraf assets/js/dist",
     "build": "NODE_ENV=production npx rollup -c --bundleConfigAsCjs",
