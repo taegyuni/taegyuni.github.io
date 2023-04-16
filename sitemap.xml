@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>http://localhost:4000/posts/%EC%B2%AB-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EA%B8%80%EC%93%B0%EA%B8%B0!/</loc>
+<lastmod>2023-04-15T21:50:00+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/categories/</loc>
+<lastmod>2023-04-15T22:28:14+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/tags/</loc>
+<lastmod>2023-04-15T22:28:14+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/archives/</loc>
+<lastmod>2023-04-15T22:28:14+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/about/</loc>
+<lastmod>2023-04-15T22:28:14+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/categories/%EC%9D%BC%EC%83%81/</loc>
+</url>
+</urlset>
