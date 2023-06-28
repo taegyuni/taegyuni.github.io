@@ -1,32 +1,29 @@
+---
+layout: null
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>http://tgkim.com/posts/%EC%B2%AB-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EA%B8%80%EC%93%B0%EA%B8%B0!/</loc>
-<lastmod>2023-04-15T21:50:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://tgkim.com/categories/</loc>
-<lastmod>2023-04-15T22:28:14+09:00</lastmod>
-</url>
-<url>
-<loc>http://tgkim.com/tags/</loc>
-<lastmod>2023-04-15T22:28:14+09:00</lastmod>
-</url>
-<url>
-<loc>http://tgkim.com/archives/</loc>
-<lastmod>2023-04-15T22:28:14+09:00</lastmod>
-</url>
-<url>
-<loc>http://tgkim.com/about/</loc>
-<lastmod>2023-04-15T22:28:14+09:00</lastmod>
-</url>
-<url>
-<loc>http://tgkim.com/</loc>
-</url>
-<url>
-<loc>http://tgkim.com/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8/</loc>
-</url>
-<url>
-<loc>http://tgkim.com/categories/%EC%9D%BC%EC%83%81/</loc>
-</url>
+  {% for post in site.posts %}
+    <url>
+      <loc>{{ site.url }}{{ post.url }}</loc>
+      {% if post.lastmod == null %}
+        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+      {% else %}
+        <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
+      {% endif %}
+
+      {% if post.sitemap.changefreq == null %}
+        <changefreq>weekly</changefreq>
+      {% else %}
+        <changefreq>{{ post.sitemap.changefreq }}</changefreq>
+      {% endif %}
+
+      {% if post.sitemap.priority == null %}
+          <priority>0.5</priority>
+      {% else %}
+        <priority>{{ post.sitemap.priority }}</priority>
+      {% endif %}
+
+    </url>
+  {% endfor %}
 </urlset>
