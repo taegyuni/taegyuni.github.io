@@ -4,6 +4,7 @@
 
 @mixin dark-scheme {
   /* Framework color */
+  //메인 컬러
   --main-bg: rgb(27, 27, 30);
   --mask-bg: rgb(68, 69, 70);
   --main-border-color: rgb(44, 45, 45);
@@ -11,10 +12,12 @@
   /* Common color */
   --text-color: rgb(175, 176, 177);
   --text-muted-color: rgb(107, 116, 124);
-  --heading-color: #c3bbdd;
+  //메인 head 컬러
+  --heading-color: #c8c9c7;
   --blockquote-border-color: rgb(66, 66, 66);
   --blockquote-text-color: rgb(117, 117, 117);
-  --link-color: 	#D6C7FF;
+  //링크 컬러
+  --link-color: #c8c9c7;
   --link-underline-color: rgb(82, 108, 150);
   --button-bg: rgb(39, 40, 43);
   --btn-border-color: rgb(63, 65, 68);

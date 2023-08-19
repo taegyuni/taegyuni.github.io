@@ -776,6 +776,7 @@ $sidebar-display: 'sidebar-display';
     }
   } /* #avatar */
 
+  // 타이틀 색상 및 크기
   .site-title {
     margin-top: 0.55rem;
 
@@ -785,16 +786,19 @@ $sidebar-display: 'sidebar-display';
       font-weight: 900;
       font-size: 1.5rem;
       letter-spacing: 0.5px;
-      color: rgba(134, 133, 133, 0.99);
+      color: rgba(254, 254, 254, 99%);
     }
   }
 
+  // 서브 타이틀 색상 및 크기
   .site-subtitle {
     font-size: 95%;
-    color: var(--sidebar-muted-color);
+    //color: var(--sidebar-muted-color);
+    color: rgba(254, 254, 254, 99%);
+    font-family: sans-serif;
     line-height: 1.25rem;
     word-spacing: 1px;
-    margin: 0.2rem 1.5rem 0.5rem 1.5rem;
+    margin: 0.5rem 1.5rem 0.5rem 1.5rem;
     min-height: 3rem; /* avoid vertical shifting in multi-line words */
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -983,7 +987,7 @@ $sidebar-display: 'sidebar-display';
 
   #breadcrumb {
     font-size: 1rem;
-    color: gray;
+    color: var(--topbar-text-color);
     padding-left: 0.5rem;
 
     a:hover {
@@ -1035,7 +1039,7 @@ $sidebar-display: 'sidebar-display';
   border: 0;
   border-radius: 0;
   padding: 0.18rem 0.3rem;
-  color: var(--text-color);
+  color: var(--search-color);
   height: auto;
 
   &:focus {
