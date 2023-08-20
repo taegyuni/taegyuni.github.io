@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://taegyuni.github.io/sitemap.xml
